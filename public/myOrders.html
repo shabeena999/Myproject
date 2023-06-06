@@ -1,0 +1,376 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      href="https://www.shutterstock.com/image-vector/map-pointer-car-icon-vector-600w-133330619.jpg"
+      type="image/jpg"
+    />
+    <title>Voyagesde</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        /* background-image: url("/img/1.jpg"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* height: 100dvh; */
+      }
+
+      body {
+        background-color: black;
+        /* background-image: url("https://www.enterprise.co.uk/en/home/_jcr_content/root/container/container/container_933387721_/image.coreimg.82.1920.png/1667526272927/img-2-3x-img-2-3x.png"); */
+        background-image: url("https://images.unsplash.com/photo-1605602560252-2d23ec73d48a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZCUyMHdpdGglMjBjYXJzfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+
+        /* background-repeat: no-repeat; */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /*nav */
+      header {
+        background-color: #19253b59;
+        box-shadow: 0 0 36px 0;
+        backdrop-filter: blur(3px);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+        margin: auto;
+        padding: 1.2rem 0rem;
+      }
+
+      .logo {
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+
+      .logo a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+      }
+
+      li {
+        padding: 0rem 1.1rem;
+        float: left;
+      }
+
+      li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+      }
+
+      li a:hover {
+        color: #91b2ff;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .button {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .button button {
+        font-weight: 500;
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+        border-radius: 20%;
+        cursor: pointer;
+      }
+
+      .button button:hover {
+        background-color: #fff;
+        color: #152939;
+        transition: all 0.3s ease-in-out;
+      }
+
+      ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+      }
+
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 150px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0px 3px 5px -1px #ccc;
+      }
+
+      ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+      }
+
+      .a-hover:hover {
+        color: red;
+      }
+
+      /* table {
+        margin: 0 auto;
+        width: 70% !important;
+      } */
+      /* .tableDiv {
+        display: flex;
+        justify-content: center !important;
+      height: 50vh;
+        margin-top: 15vh;
+      } */
+
+      .container {
+        margin-top: 40px;
+        width: 100%;
+        /* height: 60vh; */
+        display: flex;
+        flex-direction: column !important;
+        color: whitesmoke;
+        background-size: cover;
+      }
+
+      .booklist {
+        /* background-color: black; */
+        height: 60vh !important;
+        color: white;
+      }
+      .box {
+        /* border: 5px solid red; */
+        padding: 10px;
+        overflow-y: auto;
+      }
+      tr {
+        text-align: center;
+      }
+      th {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
+
+    <header>
+      <nav style="display: flex; flex-direction: row">
+        <div class="logo">
+          <a href="/index.html" class="a-hover">Voyage</a>
+        </div>
+        <ul>
+          <li>
+            <a href="/index.html" id="imp" class="a-hover">Home</a>
+          </li>
+          <li>
+            <a href="/myOrders.html" id="imp" class="a-hover">My Orders</a>
+          </li>
+          <!-- <li><a href="#" id="imp" class="a-hover">About</a></li>
+          <li><a href="#" id="imp" class="a-hover">Skills</a></li> -->
+          <li>
+            <a href="#" style="position: relative" class="a-hover"
+              >Vehicles &dtrif;</a
+            >
+            <ul
+              class="dropdown"
+              style="
+                position: absolute;
+                left: 49%;
+                background-color: black;
+                color: white;
+              "
+            >
+              <li style="margin: 0px"><a href="/bikes.html">Bikes</a></li>
+              <li style="margin: 0px"><a href="/cars.html">Cars</a></li>
+              <li style="margin: 0px"><a href="/bus.html">Buses</a></li>
+            </ul>
+          </li>
+          <li><a href="/about.html" id="imp" class="a-hover">About Us</a></li>
+        </ul>
+        <div class="button" id="loginSignup">
+          <a id="imp" href="signup.html"><button>Sign Up</button></a>
+          <a id="imp" href="signin.html"><button>Log In</button></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <div class="tableDiv">
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+    <div
+      class="container"
+      style="display: flex; align-items: center; justify-content: center"
+    >
+      <h1 style="font-size: xx-large; font-weight: 900">My Orders</h1>
+      <div class="box btn-group-vertical">
+        <!-- <div class="cnt1"> -->
+        <div class="booklist">
+          <table id="myTable" class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <!-- <th scope="col">#</th> -->
+                <th scope="col">Order Id</th>
+                <th scope="col">Vehicle Name</th>
+                <th scope="col">PickUp Date</th>
+                <th scope="col">Drop Date</th>
+                <th scope="col">Cost</th>
+              </tr>
+            </thead>
+            <tbody id="mytbody"></tbody>
+          </table>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    window.onload = async () => {
+      // if authenticate then show
+      // else redirect to login pageXOffset
+
+      // let isAuthenticated = await fetch(
+      //   "http://localhost:3001/isAuthenticated"
+      // );
+      let isAuthenticated = await fetch("/isAuthenticated");
+      isAuthenticated = await isAuthenticated.json();
+      let div = `<a id="imp" onclick="logout()"><button>Logout</button></a>`;
+      if (isAuthenticated.message === "yes") {
+        $("#loginSignup").hide;
+        $("#loginSignup").html(div);
+        console.log("fecth and show");
+        // let orders = await fetch("http://localhost:3001/getMyOrders");
+        let orders = await fetch("/getMyOrders");
+        orders = await orders.json();
+        console.log(orders);
+        createTable(orders);
+      } else {
+        $("#loginSignup").hide;
+        window.location = "/signin.html";
+      }
+    };
+
+    async function logout() {
+      // let logout = await fetch("http://localhost:3001/logout");
+      let logout = await fetch("/logout");
+      logout = await logout.json();
+      console.log(logout.message);
+      if (logout.message === "User logged Out") {
+        alert("User Logged Out Successfully");
+        window.location.reload();
+      } else {
+        alert(logout.message);
+      }
+    }
+
+    async function createTable(orders) {
+      console.log("Creating Table", orders.orders[0]);
+      orders = orders.orders;
+      // console.log(orders);
+      var tableBody = document.getElementById("mytbody");
+      let div = "";
+
+      let j = 1;
+      orders.map(async (order, i) => {
+        // console.log(order);
+        let vehicleData = await fetch(`/getDetails/${order.vehicleId}`);
+        vehicleData = await vehicleData.json();
+        console.log("Vehicle Data", vehicleData.vehicleData.Name);
+        // tableBody.append(
+        // tableBody.append(
+        //   $()
+        // );
+        // if (order.Status === "Success" && order.vehicleId != null) {
+
+        if (order.Status === "Success") {
+          console.log(order.Status === "Success");
+          div = `<tr>
+                                <td>${order._id}</td>
+                                <td>${vehicleData.vehicleData.Name}</td>
+                                <td>${order.pickup}</td>
+                                <td>${order.drop}</td>
+                                <td>${order.cost}</td>
+          </tr>`;
+          j = j + 1;
+          $("tbody").append(div);
+        }
+        // console.log(div);
+      });
+    }
+  </script>
+</html>

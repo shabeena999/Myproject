@@ -1,0 +1,433 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Voyage</title>
+    <link rel="stylesheet" href="/css/bike-detail.css" />
+    <link
+      rel="icon"
+      href="https://www.shutterstock.com/image-vector/map-pointer-car-icon-vector-600w-133330619.jpg"
+      type="image/jpg"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* body{
+        background-image: url("https://i.pinimg.com/736x/55/99/ca/5599ca80d9eb5a006e799683970b6233.jpg");
+      } */
+      header {
+        background-color: #19253b59;
+        box-shadow: 0 0 36px 0;
+        backdrop-filter: blur(3px);
+        /* background-color:; */
+        background-image: url("https://thumbs.dreamstime.com/b/water-drop-23006926.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+        margin: auto;
+        padding: 1.2rem 0rem;
+      }
+
+      .logo {
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+
+      .logo a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+      }
+
+      li {
+        padding: 0rem 1.1rem;
+        float: left;
+      }
+
+      li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+      }
+
+      li a:hover {
+        color: #91b2ff;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .button {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .button button {
+        font-weight: 500;
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+        border-radius: 20%;
+        cursor: pointer;
+      }
+
+      .button button:hover {
+        background-color: #fff;
+        color: #152939;
+        transition: all 0.3s ease-in-out;
+      }
+
+      ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+      }
+
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 150px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0px 3px 5px -1px #ccc;
+      }
+
+      ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+      }
+
+      .a-hover:hover {
+        color: red;
+      }
+
+      .title-header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav style="display: flex; flex-direction: row">
+        <div class="logo">
+          <a href="/index.html" class="a-hover">Voyage</a>
+        </div>
+        <ul>
+          <li>
+            <a href="/index.html" id="imp" class="a-hover">Home</a>
+          </li>
+          <li>
+            <a href="/myOrders.html" id="imp" class="a-hover">My Orders</a>
+          </li>
+          <!-- <li><a href="#" id="imp" class="a-hover">Skills</a></li> -->
+          <li>
+            <a href="#" style="position: relative" class="a-hover"
+              >Vehicles &dtrif;</a
+            >
+            <ul class="dropdown" style="position: absolute; left: 47%">
+              <li style="margin: 0px"><a href="/bikes.html">Bikes</a></li>
+              <li style="margin: 0px"><a href="/cars.html">Cars</a></li>
+              <li style="margin: 0px"><a href="/bus.html">Buses</a></li>
+            </ul>
+          </li>
+          <li><a href="/about.html" id="imp" class="a-hover">About</a></li>
+        </ul>
+        <div class="button" id="loginSignup">
+          <a id="imp" href="signup.html"><button>Sign Up</button></a>
+          <a id="imp" href="signin.html"><button>Log In</button></a>
+        </div>
+      </nav>
+    </header>
+    <div class="title-header">
+      <h1>Bike Details</h1>
+    </div>
+    <div class="container" style="width: 50em; height: 1vw; margin-top: 3em">
+      <div class="slideshow-container">
+        <!-- <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="https://images.hindustantimes.com/auto/img/2022/04/17/600x338/3-Ba-BMW_1626449662688_1650177061774.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="https://www.livemint.com/lm-img/img/2023/03/28/600x338/2-0-1272577671-The-BMW-7-Series--1--0_1679601246762_1679987537331_1679987537331.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/2024-bmw-5-series-101-1676576715.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div> -->
+      </div>
+      <div class="details">
+        <h2>Bike : XYZ</h2>
+        <p id="description">4 54 54</p>
+
+        <h2 style="margin-bottom: 0px; margin-top: 20px">Bike Features :-</h2>
+        <div class="features-row">
+          <div class="car-features">
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://st2.depositphotos.com/1008851/10344/v/450/depositphotos_103447524-stock-illustration-gear-charcoal-silhouette.jpg');
+                "
+              ></span>
+              <p class="car-feature-text">6 Gears</p>
+              &nbsp;&emsp;
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=12776&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">2020</p>
+            </div>
+            <br />
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=9376&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">199 CC</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=ltQtrH63i0Uf&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">20</p>
+            </div>
+            <br />
+            <p><strong>Price per Day:- 500</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let slideIndex = 0;
+      // showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+
+      function getCurrentURL() {
+        return window.location.href;
+      }
+
+      // Example
+      const url = getCurrentURL();
+      console.log(url.substring(url.lastIndexOf("/") + 1));
+      let bikeId = url.substring(url.lastIndexOf("/") + 1);
+
+      window.onload = async function () {
+        isAuthenticated();
+        let bikeDetails = await fetch(`/bikes/bikeD/${bikeId}`);
+        bikeDetails = await bikeDetails.json();
+        console.log(bikeDetails);
+        createDesign(bikeDetails);
+        showSlides();
+      };
+
+      function createDesign(bikeDetail) {
+        let div = "";
+        let img = "";
+
+        img +=
+          `<div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="` +
+          bikeDetail.images[0] +
+          `"
+            style="width: 53em;height:26em;object-fit:cover; "
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="` +
+          bikeDetail.images[1] +
+          `"
+            style="width: 53em; height:26em;object-fit:cover;"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img
+            src="` +
+          bikeDetail.images[02] +
+          `"
+          style="width: 53em; height:26em;object-fit:cover;"
+          />
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>`;
+        $(".slideshow-container").html(img);
+
+        div =
+          `<h2>Bike : ` +
+          bikeDetail.Name +
+          `</h2>
+        <p id="description">` +
+          bikeDetail.Description +
+          `</p>
+
+        <h2 style="margin-bottom: 0px">Bike Features :-</h2>
+        <div class="features-row">
+          <div class="car-features">
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://st2.depositphotos.com/1008851/10344/v/450/depositphotos_103447524-stock-illustration-gear-charcoal-silhouette.jpg');
+                "
+              ></span>
+              <p class="car-feature-text">5</p>
+              &nbsp;&emsp;
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=12776&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">2020</p>
+            </div>
+            <br />
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=9376&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">` +
+          Math.floor(Math.random() * (400 - 200 + 1) + 200) +
+          ` CC</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=ltQtrH63i0Uf&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">` +
+          Math.floor(Math.random() * (70 - 50 + 1) + 50) +
+          `</p>
+            </div>
+            <br />
+            <p><strong>Price per Day:- ` +
+          bikeDetail.Price +
+          `</strong></p>
+          </div>
+        </div>`;
+
+        $(".details").html(div);
+      }
+
+      async function isAuthenticated() {
+        // let yesNo = await fetch("http://localhost:3001/isAuthenticated");
+        let yesNo = await fetch("http://16.16.159.99:3001/isAuthenticated");
+        yesNo = await yesNo.json();
+        let div = `<a id="imp" onclick="logout()"><button>Logout</button></a>`;
+        if (yesNo.message === "yes") {
+          $("#loginSignup").hide;
+          $("#loginSignup").html(div);
+        } else {
+          $("#loginSignup").hide;
+        }
+      }
+
+      async function logout() {
+        // let logout = await fetch("http://localhost:3001/logout");
+        let logout = await fetch("/logout");
+        logout = await logout.json();
+        console.log(logout.message);
+        if (logout.message === "User logged Out") {
+          alert("User Logged Out Successfully");
+          window.location.reload();
+        } else {
+          alert(logout.message);
+        }
+      }
+    </script>
+  </body>
+</html>

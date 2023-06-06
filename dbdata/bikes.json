@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "645f6c733d3db325fe21b97e"
+  },
+  "Name": "Scooty",
+  "Price": 500,
+  "Type": "Normal Bike",
+  "Description": "A scooter (motor scooter) is a motorcycle with an underbone or step-through frame, a seat, and a platform for the rider's feet, emphasizing comfort and fuel economy.",
+  "Model": "5G",
+  "images": [
+    "https://bd.gaadicdn.com/processedimages/tvs/tvs-scooty/640X309/tvs-scooty60069d82e1217.jpg",
+    "https://www.buy2hands.com/wp-content/uploads/2022/11/honda-activa-6g.png",
+    "https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/filestore/b5d0aqr6jrdrynlxsn2rw30ezfoa_vcaol3erm86i6nz8z20j02gqw8rl_bike-on-rent-cost-in-goa.jpeg"
+  ]
+},{
+  "_id": {
+    "$oid": "645f6cbe3d3db325fe21b97f"
+  },
+  "Name": "Passion Pro",
+  "Price": 700,
+  "Type": "Normal Bike",
+  "Description": "Passion Pro is among the most popular motorcycles sold by Hero Motocorp, and sports modern, youthful styling. There is also a variant of the Passion Pro, called the Xtec, which packs some convenience-focused tech.",
+  "Model": "i3s",
+  "images": [
+    "https://bd.gaadicdn.com/processedimages/hero/passion-pro-110/640X309/passion-pro-11062b59a393be15.jpg",
+    "https://cdni.autocarindia.com/ExtraImages/20200218022551_2020-Hero-Passion-Pro.jpg",
+    "https://i.ytimg.com/vi/NsSwuRO-utw/maxresdefault.jpg"
+  ]
+},{
+  "_id": {
+    "$oid": "645f6cec3d3db325fe21b980"
+  },
+  "Name": "Duke",
+  "Price": 1500,
+  "Type": "Sports Bike",
+  "Description": "KTM Duke 200 is powered by an OBD-2 compliant, single-cylinder, 199.5cc, liquid-cooled, fuel-injected engine, which produces 25PS and 19.3Nm. The engine is paired to a 6-speed gearbox. The bike is built on a tubular split-trellis frame, which is suspended on a 43mm not required front USD fork and 10-step-preload-adjustable monoshock at the rear. Braking is handled by a 300mm disc up front and a 230mm rear disc brake. It comes with dual-channel ABS as a standard feature. The bike rolls on 17-inch alloys, which come wrapped in 110-section (front) and 150mm (rear) tubeless MRF tyres. The Duke 200 has a 13.4-litre fuel tank and weighs 159kg (kerb). The seat on this bike is 822mm high, with the ground clearance being 155mm.",
+  "Model": "BS6.2",
+  "images": [
+    "https://i.pinimg.com/736x/55/99/ca/5599ca80d9eb5a006e799683970b6233.jpg",
+    "https://images.hindustantimes.com/auto/img/2022/02/10/600x338/TM-1290-SUPER-DUKE-R-LAUNCH-2020_resized_Teaser_1615262631537_1644467716704.jpg",
+    "https://www.thrustzone.com/wp-content/uploads/2020/02/2020-KTM-Duke-200-BS6-Review-9.jpg"
+  ]
+},{
+  "_id": {
+    "$oid": "645f6d223d3db325fe21b981"
+  },
+  "Name": "Karizma",
+  "Price": 1200,
+  "Type": "Sports Bike",
+  "Description": "Hero Honda Karizma was a premium motorcycle manufactured by Hero Honda. It was first launched in May 2003, given a facelifted update with some change in graphics in 2006. After that the Hero Honda was given a cosmetic upgrade and relaunched as Karizma R in 2007. In September 2009, it was supplemented by another variant Karizma ZMR with programmed fuel injection in 2009 . ",
+  "Model": "XMR 210",
+  "images": [
+    "https://4.imimg.com/data4/RR/RR/GLADMIN-/en-in-uploads-bike-360-karizma-zmr-new-24-500x500.jpg",
+    "https://media.zigcdn.com/media/content/2018/Dec/is-this-the-new-karizma_720x540.jpg",
+    "https://im.rediff.com/getahead/2011/may/14karizma-zmr-1.jpg"
+  ]
+},{
+  "_id": {
+    "$oid": "645f6d643d3db325fe21b982"
+  },
+  "Name": "R15",
+  "Price": 1800,
+  "Type": "Sports Bike",
+  "Description": "The Yamaha R15S is powered by a 155 cc air-cooled engine which produces 18.6 PS @ 10000 rpm of power. It has a fuel tank of 11 L and a claimed mileage of 40 kmpl. It is available in one variants.",
+  "Model": "R15 V4",
+  "images": [
+    "https://financialexpresswpcontent.s3.amazonaws.com/uploads/2020/08/yamaha-r15-dark-knight.jpg",
+    "https://tiimg.tistatic.com/fp/2/007/553/automobile-yamaha-yzf-r15-v-3-0-155-cc-racing-blue-motorcycle-164.jpg",
+    "https://images.hindustantimes.com/auto/img/2021/12/08/1600x900/Yamaha_R15_V4_3_1638970701543_1638970712435.jpeg"
+  ]
+},{
+  "_id": {
+    "$oid": "645f6d9a3d3db325fe21b983"
+  },
+  "Name": "Apache",
+  "Price": 1600,
+  "Type": "Sports Bike",
+  "Description": "The TVS Apache RTR 160 is powered by a 159.7 cc air-cooled engine which produces 16.04 PS @ 8750 rpm of power. It has a fuel tank of 12 L and a claimed mileage of 47 kmpl.",
+  "Model": "RTR 160",
+  "images": [
+    "https://imgd.aeplcdn.com/1200x900/n/cw/ec/97549/apache-rtr-160-4v-right-front-three-quarter-4.jpeg?isig=0",
+    "https://5.imimg.com/data5/SELLER/Default/2022/6/EU/ZA/SL/1724688/matte-black-tvs-apache-rtr-160-4v-bike-1000x1000.jpg",
+    "https://www.drivespark.com/bikes-photos/models/750x550/tvsapacherr310_1667808867.jpg/3/x.pagespeed.ic.eH51h3nc8p.jpg"
+  ]
+}]

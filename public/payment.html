@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Rental Checkout</title>
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="icon" href="https://www.shutterstock.com/image-vector/map-pointer-car-icon-vector-600w-133330619.jpg" type="image/jpg">
+  </head>
+  <body>
+    <div class="container">
+    <div class="img-container">
+        <div class="v-name">
+            <h2> Vehicle-name </h2>
+        </div>
+        <div class="v-img">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnN8ZW58MHx8MHx8&w=1000&q=80">
+        </div>
+    </div>
+    <div class="data-container">
+    <div class="date-container">
+        <div class="pickup-date-container">
+          <label for="pickup-date">Pickup Date</label>
+          <input type="date" id="pickup-date" name="bookDateTime" placeholder="Book Date-Time">
+        </div>
+        
+        <div class="pickup-date-container">
+          <label for="drop-date">Drop Date</label>
+          <input type="date" id="drop-date" name="dropDateTime" placeholder="Drop Date-Time">
+        </div>
+    </div>
+    <div class="days-count" style="justify-content: center;">
+      <label for="count">Number of Days</label>&emsp;&emsp;&emsp;
+      <input type="text" id="count" name="count" placeholder="days">
+    </div>
+    <div class="price" style="justify-content: center;">
+      <label for="v-price" >Price per Day</label>&emsp;&emsp;&emsp;&emsp;&nbsp;
+      <input type="text" id="v-price" placeholder="Price">
+    </div>
+    <div class="total" style="justify-content: center;">
+      <label for="total" >Total Cost</label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" id="result" placeholder="Total Cost">
+    </div>
+       
+    </div>
+    </div>
+    <script src="payment.js"></script>
+  </body>
+</html>
+

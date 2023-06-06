@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Details</title>
+    <link
+      rel="icon"
+      href="https://www.shutterstock.com/image-vector/map-pointer-car-icon-vector-600w-133330619.jpg"
+      type="image/jpg"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="/css/car-detail.css"
+      type="tex
+    /css
+    " -->
+    <!-- /> -->
+    <style>
+      header {
+        background-color: #19253b59;
+        box-shadow: 0 0 36px 0;
+        backdrop-filter: blur(3px);
+        /* background-color:; */
+        background-image: url("https://thumbs.dreamstime.com/b/water-drop-23006926.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+        margin: auto;
+        padding: 1.2rem 0rem;
+      }
+
+      .logo {
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+
+      .logo a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+      }
+
+      li {
+        padding: 0rem 1.1rem;
+        float: left;
+      }
+
+      li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+      }
+
+      li a:hover {
+        color: #91b2ff;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .button {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .button button {
+        font-weight: 500;
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+        border-radius: 20%;
+        cursor: pointer;
+      }
+
+      .button button:hover {
+        background-color: #fff;
+        color: #152939;
+        transition: all 0.3s ease-in-out;
+      }
+
+      ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+      }
+
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 150px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0px 3px 5px -1px #ccc;
+      }
+
+      ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+      }
+
+      .a-hover:hover {
+        color: red;
+      }
+
+      .title-header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <link href="/css/car-detail.css" rel="stylesheet" type="text/css" />
+    <header>
+      <nav style="display: flex; flex-direction: row">
+        <div class="logo">
+          <a href="/index.html" class="a-hover">Voyage</a>
+        </div>
+        <ul>
+          <li>
+            <a href="/index.html" id="imp" class="a-hover">Home</a>
+          </li>
+          <!-- <li><a href="#" id="imp" class="a-hover">About</a></li> -->
+          <li>
+            <a href="/myOrders.html" id="imp" class="a-hover">My Orders</a>
+          </li>
+          <li>
+            <a href="#" style="position: relative" class="a-hover"
+              >Vehicles &dtrif;</a
+            >
+            <ul
+              class="dropdown"
+              style="
+                position: absolute;
+                left: 49%;
+                background-color: black;
+                color: white;
+              "
+            >
+              <li style="margin: 0px"><a href="/bikes.html">Bikes</a></li>
+              <li style="margin: 0px"><a href="/cars.html">Cars</a></li>
+              <li style="margin: 0px"><a href="/bus.html">Buses</a></li>
+            </ul>
+          </li>
+          <li><a href="/about.html" id="imp" class="a-hover">About</a></li>
+        </ul>
+        <div class="button" id="loginSignup">
+          <a id="imp" href="signup.html"><button>Sign Up</button></a>
+          <a id="imp" href="signin.html"><button>Log In</button></a>
+        </div>
+      </nav>
+    </header>
+    <div class="title-header">
+      <h1>Voyage</h1>
+    </div>
+    <div class="container">
+      <div class="slideshow-container"></div>
+      <div class="details"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let slideIndex = 0;
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+
+      function getCurrentURL() {
+        return window.location.href;
+      }
+
+      // Example
+      const url = getCurrentURL();
+      console.log(url.substring(url.lastIndexOf("/") + 1));
+      let carId = url.substring(url.lastIndexOf("/") + 1);
+
+      window.onload = async function () {
+        let yesNo = await fetch("/isAuthenticated");
+        yesNo = await yesNo.json();
+        let div = `<a id="imp" onclick="logout()"><button>Logout</button></a>`;
+        if (yesNo.message === "yes") {
+          $("#loginSignup").hide;
+          $("#loginSignup").html(div);
+        } else {
+          $("#loginSignup").hide;
+        }
+
+        let carDetails = await fetch(`/cars/carD/${carId}`);
+        carDetails = await carDetails.json();
+        // console.log("Car", carDetails);
+        createDesign(carDetails);
+        showSlides();
+      };
+
+      async function logout() {
+        // let logout = await fetch("http://localhost:3001/logout");
+        let logout = await fetch("/logout");
+        logout = await logout.json();
+        console.log(logout.message);
+        if (logout.message === "User logged Out") {
+          alert("User Logged Out Successfully");
+          window.location.reload();
+        } else {
+          alert(logout.message);
+        }
+      }
+
+      function createDesign(carDetail) {
+        let div = "";
+        let img = "";
+
+        img +=
+          `<div class="mySlides fade">
+          <div class="numbertext">1/3</div>
+          <img
+            src="` +
+          carDetail.images[0] +
+          `"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2/3</div>
+          <img
+            src="` +
+          carDetail.images[1] +
+          `"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3/3</div>
+          <img
+            src="` +
+          carDetail.images[2] +
+          `"
+            style="width: 100%"
+          />
+        </div>
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>`;
+        $(".slideshow-container").html(img);
+
+        div =
+          `<h2>Car Model: ` +
+          carDetail.Name +
+          `</h2>
+        <p>
+          ` +
+          carDetail.Description +
+          `
+        </p>
+
+        <div class="features-row">
+          <div class="car-features">
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=llzTPfNay9yW&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">` +
+          carDetail.Seats +
+          ` Seats</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=12776&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">` +
+          carDetail.Date +
+          `</p>
+            </div>
+            <br />
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=gMJ4LEwCLDgi&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">AC</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/?size=512&id=ltQtrH63i0Uf&format=png');
+                "
+              ></span>
+              <p class="car-feature-text">` +
+          carDetail.Mileage +
+          `</p>
+            </div>
+            <br />
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://img.icons8.com/dotty/80/000000/gas-pump.png ');
+                "
+              ></span>
+              <p class="car-feature-text">Petrol</p>
+            </div>
+          </div>
+          <!-- https://cdn1.vectorstock.com/i/1000x1000/82/20/car-vehicle-with-driver-isolated-icon-vector-19078220.jpg -->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <div class="car-features" style="padding-top: 0px">
+            <div class="rows" style="padding-top: 0px">
+              <h3>Cost per day</h3>
+            </div>
+            <!-- <div class="rows">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>With Driver:- ` +
+          carDetail.priceD +
+          `</p>
+          </div>
+          <div class="rows">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Without Driver:- ` +
+          carDetail.price +
+          `</p>
+          </div> -->
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://cdn1.vectorstock.com/i/1000x1000/82/20/car-vehicle-with-driver-isolated-icon-vector-19078220.jpg ');
+                "
+              ></span>
+              <p class="car-feature-text">With Driver:- ` +
+          carDetail.Price +
+          `</p>
+            </div>
+            <div class="rows">
+              <span
+                class="car-feature-symbol"
+                style="
+                  background-image: url('https://p7.hiclipart.com/preview/768/421/187/car-computer-icons-sedan-auto-detailing-auto-vector.jpg ');
+                "
+              ></span>
+              <p class="car-feature-text">Without Driver:- ` +
+          carDetail.Price +
+          `</p>
+            </div>
+          </div>
+        </div>`;
+
+        $(".details").html(div);
+      }
+    </script>
+  </body>
+</html>

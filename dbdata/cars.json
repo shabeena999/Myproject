@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "64606db5ee8445108098417f"
+  },
+  "Name": "BMW",
+  "Price": 4500,
+  "PriceD": 5000,
+  "Type": "Luxury",
+  "Description": "BMW cars are renowned for their exceptional performance, handling, and engineering, making them the perfect choice for those who crave a thrilling driving experience. With innovative technology such as iDrive, advanced safety features, and luxurious interiors, a BMW is not just a car - it's a lifestyle. Upgrade your driving game and experience the ultimate in luxury with a BMW",
+  "Seats": "5",
+  "Date": 2020,
+  "Mileage": 10,
+  "images": [
+    "https://images.hindustantimes.com/auto/img/2022/04/17/600x338/3-Ba-BMW_1626449662688_1650177061774.jpg",
+    "https://www.livemint.com/lm-img/img/2023/03/28/600x338/2-0-1272577671-The-BMW-7-Series--1--0_1679601246762_1679987537331_1679987537331.jpg",
+    "https://hips.hearstapps.com/hmg-prod/images/2024-bmw-5-series-101-1676576715.jpg"
+  ]
+},{
+  "_id": {
+    "$oid": "64606ee5ee84451080984180"
+  },
+  "Name": "Audi",
+  "Price": 2500,
+  "PriceD": 3000,
+  "Type": "Luxury",
+  "Description": "The AUDI AG stands for sporty vehicles, high build quality and progressive design – for “Vorsprung durch Technik.” The Audi Group is among the world's leading producers of premium cars",
+  "Seats": "5",
+  "Date": 2020,
+  "Mileage": 10,
+  "images": [
+    "https://d1lhv9gpjooyls.cloudfront.net/eyJvdXRwdXRGb3JtYXQiOiJqcGciLCJidWNrZXQiOiJ6YWxhLXByb2R1Y3Rpb24iLCJrZXkiOiJhY2NvdW50LTE5XC8xNjU4NDg5Mzc5Mzk3XzIyOTc5NzJcL2ltYWdlICgxKS5wbmciLCJlZGl0cyI6eyJyb3RhdGUiOm51bGwsInJlc2l6ZSI6eyJoZWlnaHQiOjEwODAsIndpZHRoIjoxMDgwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX0sImZsYXR0ZW4iOnsiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6bnVsbH19fX0=",
+    "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20220208104501_Audi_A4_LT_1.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCPMUDWXQj6GFSzo5lXgdp42BevY_wGZKwASauiPUhwW0y3MwcPQgEUzJXu2vhKdESiDrg0XXq0V8&usqp=CAU&ec=48665699"
+  ]
+},{
+  "_id": {
+    "$oid": "64606f51ee84451080984181"
+  },
+  "Name": "Brezza",
+  "Price": 2000,
+  "PriceD": 2500,
+  "Type": "Normal",
+  "Description": "Brezza has its basics in place. A smooth petrol engine, a spacious cabin, and a very comfortable ride quality. Compared to the diesel, you’d appreciate not just the refinement of the motor, but also the smooth nature of the automatic compared to the AMT.",
+  "Seats": "5",
+  "Date": 2019,
+  "Mileage": 15,
+  "images": [
+    "https://imgd.aeplcdn.com/0x0/n/cw/ec/107543/brezza-exterior-right-front-three-quarter-6.jpeg?isig=0",
+    "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20220706025905_Brezza_1.jpg&w=726&h=482&q=75&c=1",
+    "https://www.cartoq.com/wp-content/uploads/2022/07/all-new-maruti-brezza-black-edition-featured.jpg"
+  ]
+},{
+  "_id": {
+    "$oid": "64606fcbee84451080984182"
+  },
+  "Name": "Fortuner",
+  "Price": 4500,
+  "PriceD": 5000,
+  "Type": "Luxury",
+  "Description": "Toyota Fortuner is a 7 seater SUV with a mileage of 10 Kmpl depending upon it's transmission and fuel type. Fortuner's 4 cylinder, 2755 cc, 2.8 L Diesel engine can generate 165 PS @ 5200 rpm power and 245 Nm @ 4000 rpm torque. It has a fuel tank capacity of 80 Litres L.",
+  "Seats": "5",
+  "Date": 2020,
+  "Mileage": 15,
+  "images": [
+    "https://cdni.autocarindia.com/ExtraImages/20210218035907_Fortuner_off_road_tracking_.jpg",
+    "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/44709/fortuner-exterior-left-front-three-quarter.jpeg?q=75",
+    "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/01/toyota-fortuner-1609933873.jpg"
+  ]
+},{
+  "_id": {
+    "$oid": "6460702cee84451080984183"
+  },
+  "Name": "Tata Nano",
+  "Price": 1200,
+  "PriceD": 1500,
+  "Type": "Normal",
+  "Description": "One of the most iconic small cars in the Indian market, the Tata Nano has lived a hard life so far, however, it doesn’t take away the fact that it’s an extremely practical city car with a spacious cabin. The Nano is also efficient and easy to drive thanks to the tiny turning radius and light controls.",
+  "Seats": "4",
+  "Date": 2018,
+  "Mileage": 30,
+  "images": [
+    "https://images.carandbike.com/car-images/large/tata/nano/tata-nano.jpg?v=9",
+    "https://5.imimg.com/data5/WH/XY/GLADMIN-49414777/tata-nano-car-1000x1000.jpg",
+    "https://imgd-ct.aeplcdn.com/664x415/ec/29/38/10441/img/l/Tata-Nano-left-rear-three-quarter-21097.jpg?v=201711021421&q=75"
+  ]
+},{
+  "_id": {
+    "$oid": "646070c1ee84451080984185"
+  },
+  "Name": "Hyundai i10",
+  "Price": 1400,
+  "PriceD": 1800,
+  "Type": "Norma;",
+  "Description": "The Hyundai i10 has 2 Petrol Engine and 1 LPG Engine on offer. The Petrol engine is 1086 cc and 1197 cc while the LPG engine is 1086 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the i10 has a mileage of 16.95 to 20.36 kmpl & Ground clearance of i10 is 165mm. The i10 is a 5 seater 4 cylinder car and has length of 3585mm, width of 1595mm and a wheelbase of 2380mm.",
+  "Seats": "5",
+  "Date": 2022,
+  "Mileage": 15,
+  "images": [
+    "https://m.media-amazon.com/images/I/71FRI6a+JOL._SX679_.jpg",
+    "https://img.etimg.com/thumb/width-1200,height-900,imgsize-160298,resizemode-1,msid-74316237/industry/auto/cars-uvs/new-grand-i10-nios-model-launched-price-specification-details-here.jpg",
+    "https://www.financialexpress.com/wp-content/uploads/2017/02/Hyundai-Grand-i10-main-480.jpg?w=450"
+  ]
+}]
